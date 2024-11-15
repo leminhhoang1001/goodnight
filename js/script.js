@@ -30,7 +30,7 @@ var i = 0;
 var speed = 50;
 var message = messagelist[random];
 const muteSound = new Howl({
-    src: ['./audio/Romantic-Happy-Birthday.mp3'],
+    src: ['./audio/Oxygen.mp3'],
     // mute: false,
     // autoplay:true,
     loop: true,
@@ -80,12 +80,15 @@ card.addEventListener('click', function() {
     setTimeout(function() {
         var typed = new Typed('.greeting-content', {
             strings: [messagelist[random]],
-            typeSpeed: 40,
+            typeSpeed: 60,
             showCursor: false
         });
-    }, 2000);
+    }, 3000);
 }, { once: true });
 
+// update date of card
+var date = moment();
+document.getElementById("date").innerHTML = date.format('DD.MM.YYYY');
 
 // Function to generate random stars
 function generateRandomStars() {
