@@ -136,7 +136,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: #0c1a2c;
+    background: #1e314b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -272,7 +272,7 @@ body {
     letter-spacing: 0.1vmin;
     word-wrap: break-word;
     text-overflow: ellipsis;
-    text-shadow: 1vmin 1vmin 0.4vmin #2d345d44;
+    text-shadow: 1vmin 1vmin 0.4vmin #3e456b44;
     padding: 2vmin 3vmin;
 }
 
