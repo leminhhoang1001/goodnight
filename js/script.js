@@ -1,17 +1,29 @@
 const card = document.getElementById('card')
+const starryNight = document.querySelector(".starry-night");
 const tapHint = document.getElementById('tap-hint')
 const button = document.getElementById('muteaudio');
 const musicOn = '<i class="fas fa-volume-high"></i>';
 const musicOff = '<i class="fas fa-volume-xmark"></i>';
 const messagelist = [
-    "Count your life by smiles, not tears. Count your age by friends, not years.",
-    "I hope all your birthday wishes and dreams come true.",
-    "May the joy that you have spread in the past come back to you on this day.",
-    "Your life is just about to pick up speed and blast off into the stratosphere. Wear a seat belt and be sure to enjoy the journey.",
-    "Forget the past; look forward to the future, for the best things are yet to come.",
-    "You’re older today than yesterday but younger than tomorrow!",
-    "Don’t get all weird about getting older! Our age is merely the number of years the world has been enjoying us!",
-    "You are only young once, but you can be immature for a lifetime."
+    "Get some rest, my darling. You need it.",
+    "Sweet dreams, you deserve them.",
+    "Close your eyes, drift into dreamland, knowing you’re deeply loved.",
+    "Lie down and relax. Sweetheart, rest.",
+    "Rest knowing you are loved. Goodnight, lovely.",
+    "Have a restful sleep. Love, sleep well.",
+    "Let the stars sing you to sleep. Love, goodnight.",
+    "Peace, love, and sweet dreams to you. Sweetheart, rest.",
+    "Sleep well. Goodnight, sweetheart.",
+    "Sleep like a cat, sleepyhead.",
+    "Thinking of you. Sleep well!",
+    "Have the sweetest of dreams.",
+    "Sleep well. But if you get insomnia, I’m just a text away",
+    "Sleep well and dream of your favorite person . . . 😉!!!",
+    "Why are you still awake? Go to bed!",
+    "Hope you had a great day. Good night.",
+    "Have a peaceful night, babe",
+    "Get some sleep, gorgeous!",
+    "Wishing you the sweetest dreams as you drift off to sleep."
 ];
 const random = Math.floor(Math.random() * messagelist.length);
 var i = 0;
@@ -73,3 +85,18 @@ card.addEventListener('click', function() {
         });
     }, 2000);
 }, { once: true });
+
+
+// Function to generate random stars
+function generateRandomStars() {
+    for (let i = 0; i < 100; i++) {
+        const star = document.createElement("div");
+        star.className = "star";
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.animationDelay = `${Math.random() * 2}s`;
+        starryNight.appendChild(star);
+    }
+}
+
+generateRandomStars();
