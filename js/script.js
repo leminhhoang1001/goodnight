@@ -98,14 +98,14 @@ card.addEventListener('click', function(e) {
                     typeSpeed: 60,
                     showCursor: false
                 });
-            }, 2000);
+            }, 3000);
             // Hiển thị câu chúc mới
             // new Typed('.greeting-content', {
             //     strings: [message],
             //     typeSpeed: 40,
             //     showCursor: false
             // });
-        }, 2000); // Thời gian trễ để khớp với hiệu ứng lật
+        }, 600); // Thời gian trễ để khớp với hiệu ứng lật
     }
 });
 
