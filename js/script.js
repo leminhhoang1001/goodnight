@@ -105,7 +105,7 @@ card.addEventListener('click', function(e) {
             //     typeSpeed: 40,
             //     showCursor: false
             // });
-        }, 600); // Thời gian trễ để khớp với hiệu ứng lật
+        }, 60); // Thời gian trễ để khớp với hiệu ứng lật
     }
 });
 
